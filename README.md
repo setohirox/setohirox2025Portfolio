@@ -30,3 +30,20 @@ Ktorフレームワークを使用して開発されており、現在制作中�
 - ブログ機能の拡張
 - UI/UXの改善
 - レスポンシブデザインの強化。
+
+## ライセンス / License
+
+このプロジェクトは [Creative Commons 表示-非営利 4.0 国際](https://creativecommons.org/licenses/by-nc/4.0/deed.ja) ライセンスの下で公開されています。
+
+- 閲覧・学習・参考目的での使用は自由です。
+- 無断転載、商用利用、丸ごとのコピーは禁止です。
+- 利用する場合は著作者（setohirox）のクレジットを明記してください。
+
+---
+
+This project is licensed under the  
+[Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+
+- You are free to view, learn from, or reference this code and design.
+- You may not copy, redistribute, or use it for commercial purposes.
+- If you use or modify it, please credit the author (setohirox).
