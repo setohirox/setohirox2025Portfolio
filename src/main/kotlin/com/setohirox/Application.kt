@@ -1,9 +1,9 @@
-package com.example
+package com.setohirox
 
-import com.example.plugins.configureAuthentication
-import com.example.plugins.configureSessions
-import com.example.routes.adminRoutes
-import com.example.routes.blogRoutes
+import com.setohirox.plugins.configureAuthentication
+import com.setohirox.plugins.configureSessions
+import com.setohirox.routes.adminRoutes
+import com.setohirox.routes.blogRoutes
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*

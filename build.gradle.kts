@@ -4,7 +4,7 @@ plugins {
     application
 }
 
-group = "com.example"
+group = "com.setohirox"
 version = "0.0.1"
 
 application {
@@ -26,6 +26,8 @@ dependencies {
     implementation("org.commonmark:commonmark:0.21.0")
     implementation("org.commonmark:commonmark-ext-gfm-tables:0.21.0")
     implementation("org.commonmark:commonmark-ext-gfm-strikethrough:0.21.0")
+    implementation("org.commonmark:commonmark-ext-autolink:0.21.0")
+    implementation("org.commonmark:commonmark-ext-task-list-items:0.21.0")
     implementation("io.ktor:ktor-server-rate-limit:2.3.7")
     implementation("io.ktor:ktor-server-sessions:2.3.7")
     testImplementation(libs.ktor.server.test.host)
@@ -61,7 +63,7 @@ tasks {
         group = "build"
         description = "Assembles a fat jar"
         manifest {
-            attributes["Main-Class"] = "com.example.ApplicationKt"
+            attributes["Main-Class"] = "com.setohirox.ApplicationKt"
         }
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
         from(sourceSets.main.get().output)
@@ -71,7 +73,7 @@ tasks {
                 .filter { it.name.endsWith("jar") }
                 .map { zipTree(it) }
         })
-        archiveFileName.set("ktor-test2-fat.jar")
+        archiveFileName.set("setohirox2025Portfolio-fat.jar")
     }
 
     withType<JavaExec> {
@@ -84,7 +86,7 @@ ktor {
         archiveFileName.set("fat.jar")
     }
     docker {
-        localImageName.set("ktor-test2")
+        localImageName.set("setohirox2025Portfolio")
         imageTag.set("0.0.1")
     }
 }

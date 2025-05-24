@@ -1,1 +1,1 @@
-rootProject.name = "ktor-test2"
+rootProject.name = "setohirox2025Portfolio"
